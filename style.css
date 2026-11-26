@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 1;
+    z-index: 9999;
     overflow: hidden;
 }
 
@@ -31,8 +31,8 @@ body {
     background: linear-gradient(135deg, #ff4d6d, #c9184a);
     border-radius: 150% 0 150% 0;
     animation: fall linear infinite;
-    opacity: 0.8;
-    box-shadow: 0 0 10px rgba(255, 77, 109, 0.3);
+    opacity: 0.85;
+    box-shadow: 0 0 12px rgba(255, 77, 109, 0.5);
 }
 
 @keyframes fall {
@@ -41,11 +41,11 @@ body {
         opacity: 1;
     }
     50% {
-        transform: translateY(50vh) translateX(50px) rotate(180deg);
+        transform: translateY(50vh) translateX(40px) rotate(180deg);
     }
     100% {
-        transform: translateY(110vh) translateX(-50px) rotate(360deg);
-        opacity: 0.2;
+        transform: translateY(110vh) translateX(-40px) rotate(360deg);
+        opacity: 0.3;
     }
 }
 
