@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dedica Musicale per Noemi ❤️</title>
+    <title>Speciale Dedica per Noemi ❤️</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -33,16 +33,48 @@
             </div>
         </header>
 
-        <!-- Playlist Card with Single YouTube Button -->
-        <section class="playlist-section">
-            <div class="playlist-card">
-                <div class="playlist-info">
-                    <h2>🎶 La Nostra Playlist</h2>
-                    <p class="playlist-desc">Ascolta tutte le canzoni che ho scelto per te su YouTube</p>
-                </div>
+        <!-- SMART MEMORY SHORTCUT BANNER (Se ha già superato il quiz) -->
+        <div id="smart-memory-banner" class="playlist-card" style="display: none; margin-bottom: 25px;">
+            <h3>✨ Bentornata Noemi!</h3>
+            <p style="font-size: 0.95rem; color: #f0a6ca; margin-bottom: 15px;">Hai già sbloccato la nostra dedica in precedenza. Clicca qui sotto per accedere subito alla playlist!</p>
+            <a href="https://youtube.com/playlist?list=PLNEFaYHSKCEQ&si=O9c01EQ-hT6blL5j" target="_blank" class="btn-playlist">
+                <i class="fab fa-youtube"></i> Vai alla Playlist su YouTube
+            </a>
+        </div>
 
-                <div class="playlist-action-container">
-                    <a href="https://youtube.com/playlist?list=PLNEFaYHSKCEQ&si=O9c01EQ-hT6blL5j" target="_blank" class="btn-playlist" id="playlistBtn">
+        <!-- QUIZ SECTION (Prima volta) -->
+        <section class="playlist-card" id="quizCard">
+            <div id="quizIntro">
+                <div class="playlist-info">
+                    <h2>👑 Il Grande Quiz Magico</h2>
+                    <p class="playlist-desc">Per sbloccare la playlist segreta e la dedica, rispondi correttamente alle 8 domande (5 su Shrek + 3 su di me)!</p>
+                </div>
+                <div class="playlist-action-container" style="margin-top: 20px;">
+                    <button id="startQuizBtn" class="btn-playlist" style="border: none; cursor: pointer;">
+                        <i class="fas fa-key"></i> Inizia il Quiz
+                    </button>
+                </div>
+            </div>
+
+            <div id="quizContainer" style="display: none;">
+                <div class="quiz-header-info">
+                    <span id="quizProgress" class="quiz-progress">Domanda 1 di 8</span>
+                </div>
+                <div class="quiz-box">
+                    <div id="quizQuestion" class="quiz-question">Caricamento domanda...</div>
+                    <div id="quizOptions" class="quiz-options"></div>
+                </div>
+                <div id="quizFeedback" class="quiz-feedback"></div>
+            </div>
+
+            <!-- UNLOCKED PLAYLIST SECTION (Dopo aver superato il quiz) -->
+            <div id="unlockedPlaylist" style="display: none;">
+                <div class="playlist-info">
+                    <h2>🎉 Quiz Superato!</h2>
+                    <p class="playlist-desc">Hai dimostrato di conoscere Shrek e soprattutto me! Ecco la tua playlist sbloccata:</p>
+                </div>
+                <div class="playlist-action-container" style="margin-top: 20px;">
+                    <a href="https://youtube.com/playlist?list=PLNEFaYHSKCEQ&si=O9c01EQ-hT6blL5j" target="_blank" class="btn-playlist">
                         <i class="fab fa-youtube"></i> Vai alla Playlist su YouTube
                     </a>
                 </div>
