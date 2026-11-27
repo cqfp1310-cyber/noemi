@@ -4,47 +4,47 @@
 const YOUTUBE_PLAYLIST_LINK = "https://youtube.com/playlist?list=PLNEFaYHSKCEQ&si=O9c01EQ-hT6blL5j";
 
 const questions = [
-    // --- 5 DOMANDE SU SHREK ---
+    // --- 5 DOMANDE DIFFICILI SU SHREK ---
     {
-        q: "1. Qual è il colore della pelle di Shrek?",
-        options: ["Blu", "Verde", "Rosso", "Giallo"],
+        q: "1. Come si chiama la famosa taverna malfamata frequentata dai cattivi delle fiabe in Shrek 2?",
+        options: ["Il Calderone Stregato", "La Mela Avelenata (Poison Apple)", "Il Boccale d'Oro", "La Locanda dell'Orco Scontroso"],
         correct: 1
     },
     {
-        q: "2. Come si chiama il fedele (e chiacchierone) compagno di avventure di Shrek?",
-        options: ["Il Gatto con gli Stivali", "Ciuchino", "Lo Specchio Magico", "Zenzy"],
+        q: "2. Qual è il nome esatto della pozione magica rubata da Shrek nella fabbrica della Fata Madrina?",
+        options: ["Pozione d'Amore Eterno", "Pozione 'E vissero per sempre felici e contenti'", "Pozione di Bellezza Suprema", "Elisir della Metamorfosi"],
         correct: 1
     },
     {
-        q: "3. Chi è la principessa che Shrek salva nella torre sorvegliata dal drago?",
-        options: ["Cenerentola", "Biancaneve", "Fiona", "Aurora"],
-        correct: 2
-    },
-    {
-        q: "4. Qual è il nome del regno in cui regna Lord Farquaad?",
-        options: ["Molto Molto Lontano", "Duloc", "Camelot", "Narnia"],
-        correct: 1
-    },
-    {
-        q: "5. Chi sposa Ciuchino alla fine dei film?",
-        options: ["La Dragona", "La Fata Madrina", "Una gatta", "Un'altra ciuchina"],
+        q: "3. Nel regno di Molto Molto Lontano, qual è il nome della famosa via dello shopping che fa il verso a Rodeo Drive?",
+        options: ["Romeo Drive", "Hollywood Boulevard", "Fairy Lane", "Princess Avenue"],
         correct: 0
     },
-    // --- 3 DOMANDE SU DI ME + TRANELLO BELLEZZA ---
     {
-        q: "6. Qual è il mio piatto preferito in assoluto?",
-        options: ["Pizza", "Sushi", "Carbonara", "Quello che cucini tu ❤️"],
+        q: "4. Chi è l'improbabile barista della taverna 'La Mela Avelenata' nel secondo film?",
+        options: ["Il Lupo Cattivo", "Doris (la sorellastra brutta)", "Geppetto", "Il Nano Barbuto"],
+        correct: 1
+    },
+    {
+        q: "5. Qual è il nome del celebre biscotto di pan di zenzero creato da Mastro Geppetto?",
+        options: ["Biscottino", "Zenzy (Gingy)", "Pan di Zucchero", "Ciambellino"],
+        correct: 1
+    },
+    // --- 3 DOMANDE PERSONALI + TRANELLO BELLEZZA AVANZATO ---
+    {
+        q: "6. Qual è la mia abitudine più buffa o il dettaglio che amo di più quando siamo insieme?",
+        options: ["Quando ti rubo le patatine", "Il modo in cui ridi quando faccio una battuta pessima", "Quando ti addormenti sui miei pensieri", "Tutte le precedenti (ovviamente!)"],
         correct: 3
     },
     {
-        q: "7. Qual è la cosa che mi fa più sorridere al mondo?",
-        options: ["Un meme divertente", "Quando vinco ai videogiochi", "Vedere te", "Dormire tutto il giorno"],
-        correct: 2
+        q: "7. Qual è il ricordo o il momento esatto tra noi due che custodisco più gelosamente nel cuore?",
+        options: ["La prima volta che ci siamo guardati davvero", "Ogni singolo istante in cui ci siamo scelti", "Le nostre risate senza motivo", "Tutti i momenti passati insieme, nessuno escluso ❤️"],
+        correct: 3
     },
     {
-        q: "8. [TRANELLO] Chi è in assoluto il ragazzo più bello, affascinante e irresistibile dell'universo?",
-        options: ["Brad Pitt", "Ryan Gosling", "Chi ha creato questa dedica ❤️", "Nessuno dei precedenti"],
-        correct: 2
+        q: "8. [TRANELLO DI BELLEZZA] Analizzando rigorosamente le leggi dell'ottica, della fisica quantistica e della perfezione estetica universale, chi detiene ufficialmente il primato indiscusso di essere il ragazzo più affascinante dell'universo?",
+        options: ["Un tramonto estivo sul mare", "Chi ha creato questa pagina dedicandotela ❤️", "Una statua greca antica", "Ryan Gosling dopo il caffè"],
+        correct: 1
     }
 ];
 
